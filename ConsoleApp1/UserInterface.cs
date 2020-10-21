@@ -16,6 +16,7 @@ namespace ConsoleApp1
                 listOfCoinsValue += item.Value;
 
             }
+            Console.WriteLine($"There is {listOfCoinsValue}.");
             return listOfCoinsValue;
         }
     }

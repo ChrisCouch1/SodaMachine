@@ -22,9 +22,16 @@ namespace ConsoleApp1
                 return true;
 
             }
+        }
+        public double CalculateChange(double amountPassedIn, double costSoda)
+        {
+            double change = amountPassedIn - costSoda;
+            return change;
 
-
-
+        }
+        public void DispenseChange()
+        {for (int i =)
+            
 
         }
     }
