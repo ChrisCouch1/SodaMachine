@@ -8,8 +8,15 @@ namespace ConsoleApp1
 {
     class Simulation
     {
-        public SodaMachine sodaMachine = new SodaMachine();
-        public Customer customer = new Customer();
+        public SodaMachine sodaMachine;
+        public Customer customer;
+        public Simulation(SodaMachine sodaMachine, Customer customer)
+        {
+            this.sodaMachine = new SodaMachine();
+            this.customer = new Customer();
 
+        }
+        
+        
     }
 }

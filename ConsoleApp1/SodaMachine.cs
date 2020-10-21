@@ -10,5 +10,26 @@ namespace ConsoleApp1
     {
         public List<Coin> register = new List<Coin>();
         public List<Can> inventory = new List<Can>();
+    public bool CheckIfMoneyReceivedIsEnough(double amountPassedIn, double costSoda)
+    {if (amountPassedIn < costSoda)
+            {
+                return false;
+
+            }
+            else
+            {
+                return true;
+
+            }
+
+    }
+        public double CovertListOfCoinsToDouble(List<Coin> coins)
+        {
+            double listOfCoinsValue = 0;
+            foreach(Coin item in coins)
+            {
+                listOfCoinsValue += item.Value;
+            }
+        }
     }
 }

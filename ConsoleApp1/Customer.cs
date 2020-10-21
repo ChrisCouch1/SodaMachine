@@ -8,9 +8,52 @@ namespace ConsoleApp1
 {
     class Customer
     {
-        public Wallet wallet = new Wallet();
-        public Backpack backpack = new Backpack();
+        public Wallet wallet;
+        public Backpack backpack;
 
+        public Customer()
+        {
+            wallet = new Wallet();
+            wallet.coins.Add(new Quarter());
+            wallet.coins.Add(new Quarter());
+            wallet.coins.Add(new Quarter());
+            wallet.coins.Add(new Quarter());
+            wallet.coins.Add(new Quarter());
+            wallet.coins.Add(new Quarter());
+            wallet.coins.Add(new Quarter());
+            wallet.coins.Add(new Quarter());
+            wallet.coins.Add(new Quarter());
+            wallet.coins.Add(new Quarter());
+            wallet.coins.Add(new Quarter());
+            wallet.coins.Add(new Quarter());
+            wallet.coins.Add(new Quarter());
+            wallet.coins.Add(new Quarter());
+            wallet.coins.Add(new Quarter());
+            wallet.coins.Add(new Quarter());
+            wallet.coins.Add(new Dime());
+            wallet.coins.Add(new Dime());
+            wallet.coins.Add(new Dime());
+            wallet.coins.Add(new Dime());
+            wallet.coins.Add(new Dime());
+            wallet.coins.Add(new Dime());
+            wallet.coins.Add(new Dime());
+            wallet.coins.Add(new Dime());
+            wallet.coins.Add(new Dime());
+            wallet.coins.Add(new Nickel());
+            wallet.coins.Add(new Nickel());
+            wallet.coins.Add(new Nickel());
+            wallet.coins.Add(new Nickel());
+            wallet.coins.Add(new Nickel());
+            wallet.coins.Add(new Penny());
+            wallet.coins.Add(new Penny());
+            wallet.coins.Add(new Penny());
+            wallet.coins.Add(new Penny());
+            wallet.coins.Add(new Penny());
+            backpack = new Backpack();
+        }
+        
 
     }
+    
+
 }

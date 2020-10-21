@@ -8,7 +8,12 @@ namespace ConsoleApp1
 {
     class Backpack
     {
-        public List<Can> canList = new List<Can>();
+        public List<Can> cans;
+
+        public Backpack()
+        {
+            List<Can> cans = new List<Can>();
+        }
             
     }
 

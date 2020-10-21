@@ -14,5 +14,8 @@ namespace ConsoleApp1
             get { return value; }
         }
         public string name = "nickel";
+
+
     }
+    
 }
