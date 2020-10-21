@@ -29,7 +29,9 @@ namespace ConsoleApp1
             foreach(Coin item in coins)
             {
                 listOfCoinsValue += item.Value;
+
             }
+            return listOfCoinsValue;
         }
     }
 }

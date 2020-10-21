@@ -14,46 +14,38 @@ namespace ConsoleApp1
         public Customer()
         {
             wallet = new Wallet();
-            wallet.coins.Add(new Quarter());
-            wallet.coins.Add(new Quarter());
-            wallet.coins.Add(new Quarter());
-            wallet.coins.Add(new Quarter());
-            wallet.coins.Add(new Quarter());
-            wallet.coins.Add(new Quarter());
-            wallet.coins.Add(new Quarter());
-            wallet.coins.Add(new Quarter());
-            wallet.coins.Add(new Quarter());
-            wallet.coins.Add(new Quarter());
-            wallet.coins.Add(new Quarter());
-            wallet.coins.Add(new Quarter());
-            wallet.coins.Add(new Quarter());
-            wallet.coins.Add(new Quarter());
-            wallet.coins.Add(new Quarter());
-            wallet.coins.Add(new Quarter());
-            wallet.coins.Add(new Dime());
-            wallet.coins.Add(new Dime());
-            wallet.coins.Add(new Dime());
-            wallet.coins.Add(new Dime());
-            wallet.coins.Add(new Dime());
-            wallet.coins.Add(new Dime());
-            wallet.coins.Add(new Dime());
-            wallet.coins.Add(new Dime());
-            wallet.coins.Add(new Dime());
-            wallet.coins.Add(new Nickel());
-            wallet.coins.Add(new Nickel());
-            wallet.coins.Add(new Nickel());
-            wallet.coins.Add(new Nickel());
-            wallet.coins.Add(new Nickel());
-            wallet.coins.Add(new Penny());
-            wallet.coins.Add(new Penny());
-            wallet.coins.Add(new Penny());
-            wallet.coins.Add(new Penny());
-            wallet.coins.Add(new Penny());
+            for (int i = 0; i <= 16; i++)
+            {
+                wallet.coins.Add(new Quarter());
+            }
+            for (int i = 0; i <= 10; i++)
+            {
+                wallet.coins.Add(new Dime());
+            }
+            for (int i = 0; i <= 10; i++)
+            {
+                wallet.coins.Add(new Nickel());
+            }
+            for (int i = 0; i <= 10; i++)
+            {
+                wallet.coins.Add(new Penny());
+            }
             backpack = new Backpack();
         }
-        
+        public double CovertListOfCoinsToDouble(List<Coin> coins)
+        {
+            double listOfCoinsValue = 0;
+            foreach (Coin item in coins)
+            {
+                listOfCoinsValue += item.Value;
+
+            }
+            return listOfCoinsValue;
+
+
+        }
+
 
     }
-    
-
 }
+    
