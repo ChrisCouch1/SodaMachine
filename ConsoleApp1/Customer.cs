@@ -14,11 +14,11 @@ namespace ConsoleApp1
         public Customer()
         {
             wallet = new Wallet();
-            for (int i = 0; i <= 16; i++)
+            for (int i = 0; i <= 14; i++)
             {
                 wallet.coins.Add(new Quarter());
             }
-            for (int i = 0; i <= 10; i++)
+            for (int i = 0; i <= 9; i++)
             {
                 wallet.coins.Add(new Dime());
             }
@@ -32,15 +32,7 @@ namespace ConsoleApp1
             }
             backpack = new Backpack();
         }
-        public double CovertListOfCoinsToDouble(List<Coin> coins)
-        {
-            double listOfCoinsValue = 0;
-            foreach (Coin item in coins)
-            {
-                listOfCoinsValue += item.Value;
-
-            }
-            return listOfCoinsValue;
+        
 
 
         }

@@ -10,8 +10,9 @@ namespace ConsoleApp1
     {
         public List<Coin> register = new List<Coin>();
         public List<Can> inventory = new List<Can>();
-    public bool CheckIfMoneyReceivedIsEnough(double amountPassedIn, double costSoda)
-    {if (amountPassedIn < costSoda)
+        public bool CheckIfMoneyReceivedIsEnough(double amountPassedIn, double costSoda)
+        {
+            if (amountPassedIn < costSoda)
             {
                 return false;
 
@@ -22,16 +23,9 @@ namespace ConsoleApp1
 
             }
 
-    }
-        public double CovertListOfCoinsToDouble(List<Coin> coins)
-        {
-            double listOfCoinsValue = 0;
-            foreach(Coin item in coins)
-            {
-                listOfCoinsValue += item.Value;
 
-            }
-            return listOfCoinsValue;
+
+
         }
     }
 }
