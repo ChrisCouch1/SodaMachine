@@ -11,7 +11,7 @@ namespace ConsoleApp1
         public Wallet wallet;
         public Backpack backpack;
 
-        public public Customer()
+        public Customer()
         {
             wallet = new Wallet();
             for (int i = 0; i <= 14; i++)
