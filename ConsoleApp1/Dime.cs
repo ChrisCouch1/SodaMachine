@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class Dime : Coin
+    public class Dime : Coin
     {
         protected double value = 0.10;
         public double Value

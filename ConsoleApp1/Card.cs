@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class Card
+    public class Card
     {
         private double availableFunds;
         public double AvailableFunds;

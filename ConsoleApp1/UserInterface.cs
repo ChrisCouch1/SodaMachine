@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    static class UserInterface
+    public static class UserInterface
     {
-        static double CovertListOfCoinsToDouble(List<Coin> coins)
+        public static double CovertListOfCoinsToDouble(List<Coin> coins)
         {
             double listOfCoinsValue = 0;
             foreach (Coin item in coins)

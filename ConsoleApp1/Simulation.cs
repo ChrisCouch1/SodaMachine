@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class Simulation
+    public class Simulation
     {
         public SodaMachine sodaMachine;
         public Customer customer;
@@ -16,7 +16,7 @@ namespace ConsoleApp1
             this.customer = new Customer();
 
         }
-        
+       
         
     }
 }

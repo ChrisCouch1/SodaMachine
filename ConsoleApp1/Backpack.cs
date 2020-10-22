@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class Backpack
+    public class Backpack
     {
         public List<Can> cans;
 

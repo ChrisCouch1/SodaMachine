@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class OrangeSoda : Can
+    public class OrangeSoda : Can
     {
         protected double cost = 0.06;
         public double Cost

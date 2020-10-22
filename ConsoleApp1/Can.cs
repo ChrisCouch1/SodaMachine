@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    abstract class Can
+    public abstract class Can
     {
         protected double cost;
         public double Cost;

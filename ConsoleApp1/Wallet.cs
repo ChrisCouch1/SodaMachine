@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class Wallet
+    public class Wallet
     {
         public List<Coin> coins;
         public Card card;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class RootBeer : Can
+    public class RootBeer : Can
     {
         protected double cost = 0.60;
         public double Cost
