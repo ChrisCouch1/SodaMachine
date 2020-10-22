@@ -12,8 +12,8 @@ namespace ConsoleApp1
         public List<Can> inventory = new List<Can>();
         public List<Coin> changeDispense;
         public Can canInBin;
-        
 
+        
         public void Transaction(List<Coin> coins, double costSoda, string canName)
         {
             //determines the amount based on the coin objects

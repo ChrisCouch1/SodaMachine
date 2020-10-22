@@ -10,7 +10,7 @@ namespace ConsoleApp1
     {
         public Wallet wallet;
         public Backpack backpack;
-        public List<Coin> CoinsForPayment;
+        public List<Coin> coinsForPayment;
 
         public Customer()
         {
@@ -44,7 +44,7 @@ namespace ConsoleApp1
                         if (coin.Value == 0.25)
                         {
                             wallet.coins.Remove(coin);
-                            CoinsForPayment.Add(coin);
+                            coinsForPayment.Add(coin);
                         }
                     }
                 }
@@ -55,7 +55,7 @@ namespace ConsoleApp1
                         if (coin.Value == 0.10)
                         {
                             wallet.coins.Remove(coin);
-                            CoinsForPayment.Add(coin);
+                            coinsForPayment.Add(coin);
                         }
                     }
                 }
@@ -66,7 +66,7 @@ namespace ConsoleApp1
                         if (coin.Value == 0.05)
                         {
                             wallet.coins.Remove(coin);
-                            CoinsForPayment.Add(coin);
+                            coinsForPayment.Add(coin);
                         }
                     }
                 }
@@ -77,12 +77,12 @@ namespace ConsoleApp1
                         if (coin.Value == 0.01)
                         {
                             wallet.coins.Remove(coin);
-                            CoinsForPayment.Add(coin);
+                            coinsForPayment.Add(coin);
                         }
                     }
                 }
             }
-            return CoinsForPayment;
+            return coinsForPayment;
         }
         
 

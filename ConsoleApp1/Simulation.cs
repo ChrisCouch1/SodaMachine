@@ -15,6 +15,15 @@ namespace ConsoleApp1
             this.sodaMachine = new SodaMachine();
             this.customer = new Customer();
         }
+        public void CustomerTakesChange()
+        {
+           customer.wallet.coins.AddRange(sodaMachine.changeDispense);
+        }
+        public void CustomerTakesSoda()
+        {
+            customer.backpack.cans.Add(sodaMachine.canInBin);
+        }
+
        
         
     }
