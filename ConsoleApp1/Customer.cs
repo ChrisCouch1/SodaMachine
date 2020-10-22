@@ -10,6 +10,7 @@ namespace ConsoleApp1
     {
         public Wallet wallet;
         public Backpack backpack;
+        public List<Coin> CoinsForPayment;
 
         public Customer()
         {
@@ -32,10 +33,58 @@ namespace ConsoleApp1
             }
             backpack = new Backpack();
         }
-        
-
-
+        public List<Coin> GetCoinsForPayment(double payment)
+        {
+            while (payment > 0)
+            {
+                if (payment >= 0.25)
+                {
+                    foreach (Coin coin in wallet.coins)
+                    {
+                        if (coin.Value == 0.25)
+                        {
+                            wallet.coins.Remove(coin);
+                            CoinsForPayment.Add(coin);
+                        }
+                    }
+                }
+                else if (payment >= 0.10)
+                {
+                    foreach (Coin coin in wallet.coins)
+                    {
+                        if (coin.Value == 0.10)
+                        {
+                            wallet.coins.Remove(coin);
+                            CoinsForPayment.Add(coin);
+                        }
+                    }
+                }
+                else if (payment >= 0.05)
+                {
+                    foreach (Coin coin in wallet.coins)
+                    {
+                        if (coin.Value == 0.05)
+                        {
+                            wallet.coins.Remove(coin);
+                            CoinsForPayment.Add(coin);
+                        }
+                    }
+                }
+                else if (payment >= 0.01)
+                {
+                    foreach (Coin coin in wallet.coins)
+                    {
+                        if (coin.Value == 0.01)
+                        {
+                            wallet.coins.Remove(coin);
+                            CoinsForPayment.Add(coin);
+                        }
+                    }
+                }
+            }
+            return CoinsForPayment;
         }
+        
 
 
     }

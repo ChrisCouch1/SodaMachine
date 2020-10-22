@@ -114,6 +114,7 @@ namespace ConsoleApp1
                     }
                 }
             }
+            Console.WriteLine($"Returning {changeReturned} in change.");
             return changeDispense;
         }
 
