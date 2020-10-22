@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,12 +9,44 @@ namespace ConsoleApp1
 {
     public class SodaMachine
     {
-        public List<Coin> register = new List<Coin>();
-        public List<Can> inventory = new List<Can>();
+        public List<Coin> register;
+        public List<Can> inventory;
         public List<Coin> changeDispense;
         public Can canInBin;
 
-        
+        public SodaMachine()
+        {
+            register = new List<Coin>();
+            inventory = new List<Can>();
+            for (int i = 0; i <= 20; i++)
+            {
+                register.Add(new Quarter());
+            }
+            for (int i = 0; i <= 10; i++)
+            {
+                register.Add(new Dime());
+            }
+            for (int i = 0; i <= 20; i++)
+            {
+                register.Add(new Nickel());
+            }
+            for (int i = 0; i <= 50; i++)
+            {
+                register.Add(new Penny());
+            }
+            for (int i = 0; i <= 15; i++)
+            {
+                inventory.Add(new RootBeer());
+            }
+            for (int i = 0; i <= 15; i++)
+            {
+                inventory.Add(new OrangeSoda());
+            }
+            for (int i = 0; i <= 15; i++)
+            {
+                inventory.Add(new Cola());
+            }
+        }
         public void Transaction(List<Coin> coins, double costSoda, string canName)
         {
             //determines the amount based on the coin objects
