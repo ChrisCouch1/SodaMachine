@@ -14,7 +14,6 @@ namespace ConsoleApp1
         {
             this.sodaMachine = new SodaMachine();
             this.customer = new Customer();
-
         }
        
         
