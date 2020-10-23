@@ -14,6 +14,10 @@ namespace ConsoleApp1
             get { return cost; }
         }
         public string name = "orange soda";
+        public OrangeSoda()
+        {
+
+        }
 
         
     }

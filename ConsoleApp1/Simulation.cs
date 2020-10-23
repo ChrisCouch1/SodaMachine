@@ -10,10 +10,10 @@ namespace ConsoleApp1
     {
         public SodaMachine sodaMachine;
         public Customer customer;
-        public Simulation(SodaMachine sodaMachine, Customer customer)
+        public Simulation()
         {
-            this.sodaMachine = new SodaMachine();
-            this.customer = new Customer();
+            SodaMachine sodaMachine = new SodaMachine();
+            Customer customer = new Customer();
         }
         public void CustomerTakesChange()
         {

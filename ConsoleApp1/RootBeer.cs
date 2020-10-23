@@ -15,5 +15,9 @@ namespace ConsoleApp1
         }
         public string name = "root beer";
 
+        public RootBeer()
+        {
+
+        }
     }
 }

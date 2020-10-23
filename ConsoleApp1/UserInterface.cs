@@ -19,10 +19,10 @@ namespace ConsoleApp1
             Console.WriteLine($"There is {listOfCoinsValue}.");
             return listOfCoinsValue;
         }
-        public static int IntroductionSelection(int userInput)
+        public static int IntroductionSelection()
         {
             Console.WriteLine("Welcome to a SodaFunk Soda Machine\n\n\nWhich soda would you like?\n1 for Rootbeer $0.60\n2 for Orange Soda $0.06\n3 for Cola $0.35");
-            userInput = Convert.ToInt32(Console.ReadLine());
+            int userInput = Convert.ToInt32(Console.ReadLine());
             return userInput;
         }
         
